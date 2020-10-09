@@ -9,7 +9,7 @@ int main()
     int risposta;
     int a=1;
 
-    printf("vuoi fare coding(0) o deconding(1),figa!");
+    printf("vuoi fare coding(0) o deconding(1):");
     scanf("%d",&risposta);
 
     
