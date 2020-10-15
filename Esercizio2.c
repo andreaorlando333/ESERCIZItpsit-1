@@ -8,9 +8,14 @@ int main()
     char S[MAX];
     int risposta;
     int a=1;
+    int occ;
 
     printf("vuoi fare coding(0) o deconding(1):");
     scanf("%d",&risposta);
+
+            printf("inserire la stringa:");
+            scanf("%s",&S);
+            int lung = strlen(S);
 
     
 
@@ -18,11 +23,7 @@ int main()
     {
         case 0:  //coding
 
-        printf("inserire la stringa:");
-        scanf("%s",&S);
-
-        int lung = strlen(S); //inserisco nella variabile lun il numero di celle dell'arrey di caratteri
-
+        
         
 
         for(int I=0;I<lung;I++)
@@ -38,7 +39,6 @@ int main()
                 
                 printf("%d",a);
                 printf("%c",S[I]);
-
                 a=1;
 
                
@@ -50,18 +50,43 @@ int main()
         
         
         break;
-        case 1:  //decoding
+        case 1:
+
+            
+        
+
+        for(int I=0;I<=lung;I++)
+        {
+            
+
+            
+
+            if(S[I]> '0' && S[I] < '9')
+            {
+               
+                occ = S[I] - '0'; 
+            }
+            else
+            {
+                
+                for(int J =0;J<=occ;J++)
+                
+                printf("%s",S[I]);
+
+                occ = 0;
+
+                
+            }
+
+        }  
 
         break;
 
     }
 
 
-    
-
-
-
    return 0;
+
 }
 
 
