@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
+//ok
 #define MAX 100
 
 int main()
