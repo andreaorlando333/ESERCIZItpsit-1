@@ -3,6 +3,8 @@
 //ok
 #define MAX 100
 
+// ciao
+
 int main()
 {
     char S[MAX];
